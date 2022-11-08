@@ -1,0 +1,13 @@
+
+.image-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.image-content {
+}
+image{
+	width:250rpx;
+	height: 250rpx;
+}
+

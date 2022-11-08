@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "almost-lottery": "/uni_modules/almost-lottery/components/almost-lottery/almost-lottery"
+  }
+}

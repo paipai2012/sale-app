@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/luck",
+    "pages/index/index",
+    "pages/index/category"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/luck",
+        "#iconPath": "static/image/icon_API.png",
+        "#selectedIconPath": "static/image/icon_API_HL.png",
+        "text": "抽奖"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "#iconPath": "static/image/icon_component.png",
+        "#selectedIconPath": "static/image/icon_component_HL.png",
+        "text": "热门"
+      },
+      {
+        "pagePath": "pages/index/category",
+        "#iconPath": "static/image/icon_API.png",
+        "#selectedIconPath": "static/image/icon_API_HL.png",
+        "text": "分类"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
