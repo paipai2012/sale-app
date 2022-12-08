@@ -98,13 +98,20 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 {
-  // globalData: {  
-  //     appToken: 'appToken'  
-  // }, 
+  globalData: {
+    user_tmp_name: '' },
+
   onLaunch: function onLaunch() {
     // this.$request.getAppToken();
+    console.log('onLaunch');
+    var user_tmp_name = uni.getStorageSync('user_tmp_name');
+    if (!user_tmp_name) {
+      user_tmp_name = Date.now();
+      uni.setStorageSync('user_tmp_name', user_tmp_name);
+    }
+    this.globalData.user_tmp_name = user_tmp_name.toString();
   },
   onShow: function onShow() {
     console.log('App Show');
@@ -112,6 +119,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   onHide: function onHide() {
     console.log('App Hide');
   } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 9 */

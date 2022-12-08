@@ -1,19 +1,25 @@
 <template>
-      <almost-lottery
-        :lottery-size="lotteryConfig.lotterySize"
-        :action-size="lotteryConfig.actionSize"
-        :ring-count="2"
-        :duration="1"
-        :img-circled="true"
-        :canvasCached="true"
-        :prize-list="prizeList"
-        :prize-index="prizeIndex"
-        @reset-index="prizeIndex = -1"
-        @draw-start="handleDrawStart"
-        @draw-end="handleDrawEnd"
-        @finish="handleDrawFinish"
-        v-if="prizeList.length"
-      />
+	<view>
+		<almost-lottery
+			:lottery-size="lotteryConfig.lotterySize"
+			:action-size="lotteryConfig.actionSize"
+			:ring-count="2"
+			:duration="1"
+			:img-circled="true"
+			:canvasCached="true"
+			:prize-list="prizeList"
+			:prize-index="prizeIndex"
+			@reset-index="prizeIndex = -1"
+			@draw-start="handleDrawStart"
+			@draw-end="handleDrawEnd"
+			@finish="handleDrawFinish"
+			v-if="prizeList.length"
+		/>
+    <uni-popup ref="inputDialog" type="dialog">
+      <uni-popup-dialog ref="phoneInput" type="number" mode="input" title="输入手机号领取奖品" value=""
+        placeholder="请输入手机号" @confirm="dialogPhoneConfirm"></uni-popup-dialog>
+    </uni-popup>
+	</view>
 </template>
 
 <script>
@@ -79,6 +85,29 @@
       }
     },
     methods: {
+      // 提交中奖手机号
+      dialogPhoneConfirm(value) {
+        this.$request.send(
+          {
+            url:'luck/addDraw',
+            method:'POST',
+            data:{luck_id:1}
+          }
+        );
+        // let data = res.data
+        // if(!data.success) {
+        //   uni.hideLoading()
+				// 	uni.showModal({
+				// 		title: data.message,
+        //     showCancel: false,
+        //     // mask: true,
+        //     // icon: 'none'
+				// 	})
+        //   this.prizeing = false;
+        //   return
+        // }
+        // console.log(value);
+      },
       // 重新生成
       handleInitCanvas () {
 				clearCacheFile()
@@ -96,13 +125,19 @@
         // 等待接口返回的数据进一步处理
         let res = await this.requestApiGetPrizeList()
         console.log('res:',res);
+        if(!res.data.success) {
+          uni.hideLoading()
+					uni.showModal({
+						title: res.data.message,
+            showCancel: false,
+					})
+        }
         const data = res.data.data;
         if(!data.success) {
           uni.hideLoading()
-					uni.showToast({
+					uni.showModal({
 						title: data.message,
-            mask: true,
-            icon: 'none'
+            showCancel: false,
 					})
         }
         this.isNoData = (data.length <= 0);
@@ -164,29 +199,29 @@
         this.prizeing = true
         
         // 还有免费数次或者剩余金币足够抽一次
-        if (this.freeNum > 0 || this.goldCoin >= this.goldNum) {
+        // if (this.freeNum > 0 || this.goldCoin >= this.goldNum) {
         
-          // 更新免费次数或金币余额
-          if (this.freeNum > 0) {
-            this.freeNum--
-          } else if (this.goldCoin >= this.goldNum) {
-            this.goldCoin -= this.goldNum
-          }
+        //   // 更新免费次数或金币余额
+        //   if (this.freeNum > 0) {
+        //     this.freeNum--
+        //   } else if (this.goldCoin >= this.goldNum) {
+        //     this.goldCoin -= this.goldNum
+        //   }
           
           this.tryLotteryDraw()
-        } else {
-          uni.showModal({
-            title: '金币不足',
-            content: '是否前往赚取金币？',
-            success: (res) => {
-              // 这里需要根据业务需求处理，一般情况下会引导用户前往赚取金币的页面
-              console.log('金币不足', res)
-            },
-            complete: () => {
-              this.prizeing = false
-            }
-          })
-        }
+        // } else {
+        //   uni.showModal({
+        //     title: '金币不足',
+        //     content: '是否前往赚取金币？',
+        //     success: (res) => {
+        //       // 这里需要根据业务需求处理，一般情况下会引导用户前往赚取金币的页面
+        //       console.log('金币不足', res)
+        //     },
+        //     complete: () => {
+        //       this.prizeing = false
+        //     }
+        //   })
+        // }
       },
       // 尝试发起抽奖
       tryLotteryDraw () {
@@ -272,34 +307,42 @@
       },
       // 远程请求接口获取中奖下标
       // 大哥，这里只是模拟，别告诉我你不会对接自己的接口
-      remoteGetPrizeIndex () {
-        console.warn('###当前处于模拟的请求接口，并返回了中奖信息###')
-        // 模拟请求接口获取中奖信息
-        let stoTimer = setTimeout(() => {
-          stoTimer = null
-          
-          let list = [...this.prizeList]
-          
-          // 这里随机产生的 prizeId 是模拟后端返回的 prizeId
-          let prizeId = Math.floor(Math.random() * list.length + 1)
-          
-          // 拿到后端返回的 prizeId 后，开始循环比对得出那个中奖的数据
-          for (let i = 0; i < list.length; i++) {
-            let item = list[i]
-            if (item.prizeId === prizeId) {
-              // 中奖下标
-              this.prizeIndex = i
-              break
-            }
+      async remoteGetPrizeIndex () {
+        let res =  await this.$request.send(
+          {
+            url:'luck/addDraw',
+            method:'POST',
+            data:{luck_id:1}
           }
-          
-          console.log('本次抽中奖品 =>', this.prizeList[this.prizeIndex].prizeName)
-          
-          // 如果奖品设有库存
-          if (this.onStock) {
-          	console.log('本次奖品库存 =>', this.prizeList[this.prizeIndex].prizeStock)
+        );
+        let data = res.data
+        if(!data.success) {
+          uni.hideLoading()
+					uni.showModal({
+						title: data.message,
+            showCancel: false,
+            // mask: true,
+            // icon: 'none'
+					})
+          this.prizeing = false;
+          return
+        }
+        let prizeId = data.data.id
+        let list = [...this.prizeList]
+        // 拿到后端返回的 prizeId 后，开始循环比对得出那个中奖的数据
+        for (let i = 0; i < list.length; i++) {
+          let item = list[i]
+          if (item.prizeId === prizeId) {
+            // 中奖下标
+            this.prizeIndex = i
+            break
           }
-        }, 200)
+        }
+        console.log('本次抽中奖品 =>', this.prizeList[this.prizeIndex].prizeName)
+        // 如果奖品设有库存
+        if (this.onStock) {
+          console.log('本次奖品库存 =>', this.prizeList[this.prizeIndex].prizeStock)
+        }
       },
       // 本次抽奖结束
       handleDrawEnd () {
@@ -328,6 +371,7 @@
             this.prizeing = false
           }
         })
+        this.$refs.inputDialog.open()
       },
       // 抽奖转盘绘制完成
       handleDrawFinish (res) {

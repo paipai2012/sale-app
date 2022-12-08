@@ -77,6 +77,7 @@ export const request = {
 	},
 	request(options) {
 		return new Promise((resolve, reject)=>{
+			options.data.username = getApp().globalData.user_tmp_name
 			uni.request({
 				url: this.apiHost + options.url,
 				data: options.data || {},
