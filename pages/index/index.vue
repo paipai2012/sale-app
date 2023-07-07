@@ -1,10 +1,9 @@
 <template>
-	<view class="content">
-		<view class="image-list">
-			<view class="image-item" v-for="(item,index) in dataList" :key="index">
-				<image mode="aspectFill" whit :src="item.src"
-						@error="imageError"></image>
-			</view>
+	<view>
+		<view>
+			<navigator url="/pages/index/luck?luck_id=1" hover-class="navigator-hover">
+				<button type="default">去抽奖</button>
+			</navigator>
 		</view>
 	</view>
 </template>
@@ -83,16 +82,5 @@ export default {
 
 
 <style>
-	.image-list {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.image-content {
-		
-	}
-	image{
-		width:250rpx;
-		height: 250rpx;
-	}
+
 </style>

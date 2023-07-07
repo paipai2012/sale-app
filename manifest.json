@@ -71,7 +71,14 @@
     "vueVersion" : "2",
     "h5" : {
         "devServer" : {
-            "port" : 7000
+			"proxy": {
+				"/api": {                    
+					"target":"http://www.ixxxx.com",
+					"changeOrigin": true,//是否跨域
+					"secure": false,// 设置支持https协议的代理
+					 "pathRewrite":{"^/api":"/"}
+				}
+			}
         }
     }
 }

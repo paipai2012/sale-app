@@ -1,21 +1,6 @@
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/index/luck"],[
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/index/luck"],{
+
+/***/ 23:
 /*!***********************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/main.js?{"page":"pages%2Findex%2Fluck"} ***!
   \***********************************************************************************************/
@@ -27,12 +12,13 @@
 
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));
-var _luck = _interopRequireDefault(__webpack_require__(/*! ./pages/index/luck.vue */ 17));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // @ts-ignore
+var _luck = _interopRequireDefault(__webpack_require__(/*! ./pages/index/luck.vue */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // @ts-ignore
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;createPage(_luck.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
-/* 17 */
+
+/***/ 24:
 /*!****************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/pages/index/luck.vue ***!
   \****************************************************************************/
@@ -41,8 +27,8 @@ wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;createPage(_luck.defa
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _luck_vue_vue_type_template_id_3e564df2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./luck.vue?vue&type=template&id=3e564df2& */ 18);
-/* harmony import */ var _luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./luck.vue?vue&type=script&lang=js& */ 20);
+/* harmony import */ var _luck_vue_vue_type_template_id_3e564df2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./luck.vue?vue&type=template&id=3e564df2& */ 25);
+/* harmony import */ var _luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./luck.vue?vue&type=script&lang=js& */ 27);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 11);
 
@@ -70,7 +56,8 @@ component.options.__file = "pages/index/luck.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
-/* 18 */
+
+/***/ 25:
 /*!***********************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/pages/index/luck.vue?vue&type=template&id=3e564df2& ***!
   \***********************************************************************************************************/
@@ -79,7 +66,7 @@ component.options.__file = "pages/index/luck.vue"
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_template_id_3e564df2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./luck.vue?vue&type=template&id=3e564df2& */ 19);
+/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_template_id_3e564df2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./luck.vue?vue&type=template&id=3e564df2& */ 26);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_template_id_3e564df2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_template_id_3e564df2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
@@ -91,7 +78,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ }),
-/* 19 */
+
+/***/ 26:
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/pengdongjiang/Documents/code/sale/uniapp/pages/index/luck.vue?vue&type=template&id=3e564df2& ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -108,13 +96,13 @@ var components
 try {
   components = {
     almostLottery: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/almost-lottery/components/almost-lottery/almost-lottery */ "uni_modules/almost-lottery/components/almost-lottery/almost-lottery").then(__webpack_require__.bind(null, /*! @/uni_modules/almost-lottery/components/almost-lottery/almost-lottery.vue */ 39))
+      return __webpack_require__.e(/*! import() | uni_modules/almost-lottery/components/almost-lottery/almost-lottery */ "uni_modules/almost-lottery/components/almost-lottery/almost-lottery").then(__webpack_require__.bind(null, /*! @/uni_modules/almost-lottery/components/almost-lottery/almost-lottery.vue */ 38))
     },
     uniPopup: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 46))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 45))
     },
     uniPopupDialog: function() {
-      return Promise.all(/*! import() | uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog.vue */ 53))
+      return Promise.all(/*! import() | uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog.vue */ 52))
     }
   }
 } catch (e) {
@@ -151,7 +139,8 @@ render._withStripped = true
 
 
 /***/ }),
-/* 20 */
+
+/***/ 27:
 /*!*****************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/pages/index/luck.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************************************/
@@ -160,13 +149,14 @@ render._withStripped = true
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./luck.vue?vue&type=script&lang=js& */ 21);
+/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./luck.vue?vue&type=script&lang=js& */ 28);
 /* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_luck_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 21 */
+
+/***/ 28:
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/pengdongjiang/Documents/code/sale/uniapp/pages/index/luck.vue?vue&type=script&lang=js& ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -200,7 +190,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/almost-utils.js */ 22);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var AlmostLottery = function AlmostLottery() {__webpack_require__.e(/*! require.ensure | uni_modules/almost-lottery/components/almost-lottery/almost-lottery */ "uni_modules/almost-lottery/components/almost-lottery/almost-lottery").then((function () {return resolve(__webpack_require__(/*! @/uni_modules/almost-lottery/components/almost-lottery/almost-lottery.vue */ 39));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/almost-utils.js */ 29);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var AlmostLottery = function AlmostLottery() {__webpack_require__.e(/*! require.ensure | uni_modules/almost-lottery/components/almost-lottery/almost-lottery */ "uni_modules/almost-lottery/components/almost-lottery/almost-lottery").then((function () {return resolve(__webpack_require__(/*! @/uni_modules/almost-lottery/components/almost-lottery/almost-lottery.vue */ 38));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
   name: 'Home',
   components: {
@@ -208,6 +198,7 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
 
   data: function data() {
     return {
+      luck_id: 0,
       // 开启调试模式
       isDev: true,
 
@@ -262,27 +253,36 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
 
   methods: {
     // 提交中奖手机号
-    dialogPhoneConfirm: function dialogPhoneConfirm(value) {
-      this.$request.send(
-      {
-        url: 'luck/addDraw',
-        method: 'POST',
-        data: { luck_id: 1 } });
+    dialogPhoneConfirm: function dialogPhoneConfirm(value) {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res, data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:if (
+                _this.$validator.PhoneNum(value)) {_context.next = 3;break;}
+                uni.showToast({
+                  title: "手机号格式不正确",
+                  mask: true,
+                  icon: 'none' });return _context.abrupt("return");case 3:_context.next = 5;return (
 
 
-      // let data = res.data
-      // if(!data.success) {
-      //   uni.hideLoading()
-      // 	uni.showModal({
-      // 		title: data.message,
-      //     showCancel: false,
-      //     // mask: true,
-      //     // icon: 'none'
-      // 	})
-      //   this.prizeing = false;
-      //   return
-      // }
-      // console.log(value);
+
+                  _this.$request.send(
+                  {
+                    url: 'luck/updateUserPhone',
+                    method: 'POST',
+                    data: { phone: value } }));case 5:res = _context.sent;
+
+
+                data = res.data;if (
+                data.success) {_context.next = 10;break;}
+                uni.showModal({
+                  title: data.message,
+                  showCancel: false });return _context.abrupt("return");case 10:
+
+
+
+                _this.$refs.inputDialog.close();
+                uni.showModal({
+                  title: "谢谢，你的奖品会快马加鞭",
+                  showCancel: false });
+
+                console.log(value);case 13:case "end":return _context.stop();}}}, _callee);}))();
     },
     // 重新生成
     handleInitCanvas: function handleInitCanvas() {
@@ -293,13 +293,13 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
       this.getPrizeList();
     },
     // 获取奖品列表
-    getPrizeList: function getPrizeList() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res, data, data_list, prizeWeightArrSort;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+    getPrizeList: function getPrizeList() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res, data, data_list, prizeWeightArrSort;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
                 uni.showLoading({
                   title: '奖品准备中...' });
 
 
                 // 等待接口返回的数据进一步处理
-                _context.next = 3;return _this.requestApiGetPrizeList();case 3:res = _context.sent;
+                _context2.next = 3;return _this2.requestApiGetPrizeList();case 3:res = _context2.sent;
                 console.log('res:', res);
                 if (!res.data.success) {
                   uni.hideLoading();
@@ -316,7 +316,7 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
                     showCancel: false });
 
                 }
-                _this.isNoData = data.length <= 0;
+                _this2.isNoData = data.length <= 0;
                 data_list = data.items.map(function (item) {
                   return {
                     prizeId: item.id,
@@ -327,7 +327,7 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
 
                 });
                 if (data_list.length) {
-                  _this.prizeList = data_list;
+                  _this2.prizeList = data_list;
                   console.log('已获取到奖品列表数据，开始绘制抽奖转盘');
 
                   // 计算开始绘制的时间
@@ -337,16 +337,16 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
 
                   // 如果开启了前端控制概率
                   // 得出权重的最大值并生成权重数组
-                  if (_this.onFrontend) {
+                  if (_this2.onFrontend) {
                     // 生成权重数组并排序取得最大值
-                    _this.prizeWeightArr = _this.prizeList.map(function (item) {return item.prizeWeight;});
-                    prizeWeightArrSort = _toConsumableArray(_this.prizeWeightArr);
+                    _this2.prizeWeightArr = _this2.prizeList.map(function (item) {return item.prizeWeight;});
+                    prizeWeightArrSort = _toConsumableArray(_this2.prizeWeightArr);
                     prizeWeightArrSort.sort(function (a, b) {return b - a;});
 
                     // 开放自定义权重最大值，没有自定义则取权重数组中的最大值
-                    _this.prizeWeightMax = _this.prizeWeightMax > 0 ? _this.prizeWeightMax : prizeWeightArrSort[0];
+                    _this2.prizeWeightMax = _this2.prizeWeightMax > 0 ? _this2.prizeWeightMax : prizeWeightArrSort[0];
                   }
-                }case 11:case "end":return _context.stop();}}}, _callee);}))();
+                }case 11:case "end":return _context2.stop();}}}, _callee2);}))();
     },
     // 模拟请求 获取奖品列表 接口，
     // 注意这里返回的是一个 Promise
@@ -483,16 +483,16 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
     },
     // 远程请求接口获取中奖下标
     // 大哥，这里只是模拟，别告诉我你不会对接自己的接口
-    remoteGetPrizeIndex: function remoteGetPrizeIndex() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res, data, prizeId, list, i, item;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
-                  _this2.$request.send(
+    remoteGetPrizeIndex: function remoteGetPrizeIndex() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var res, data, prizeId, list, i, item;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (
+                  _this3.$request.send(
                   {
                     url: 'luck/addDraw',
                     method: 'POST',
-                    data: { luck_id: 1 } }));case 2:res = _context2.sent;
+                    data: { luck_id: _this3.luck_id } }));case 2:res = _context3.sent;
 
 
                 data = res.data;if (
-                data.success) {_context2.next = 9;break;}
+                data.success) {_context3.next = 9;break;}
                 uni.hideLoading();
                 uni.showModal({
                   title: data.message,
@@ -500,28 +500,28 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
                   // mask: true,
                   // icon: 'none'
                 });
-                _this2.prizeing = false;return _context2.abrupt("return");case 9:
+                _this3.prizeing = false;return _context3.abrupt("return");case 9:
 
 
                 prizeId = data.data.id;
-                list = _toConsumableArray(_this2.prizeList);
+                list = _toConsumableArray(_this3.prizeList);
                 // 拿到后端返回的 prizeId 后，开始循环比对得出那个中奖的数据
-                i = 0;case 12:if (!(i < list.length)) {_context2.next = 20;break;}
+                i = 0;case 12:if (!(i < list.length)) {_context3.next = 20;break;}
                 item = list[i];if (!(
-                item.prizeId === prizeId)) {_context2.next = 17;break;}
+                item.prizeId === prizeId)) {_context3.next = 17;break;}
                 // 中奖下标
-                _this2.prizeIndex = i;return _context2.abrupt("break", 20);case 17:i++;_context2.next = 12;break;case 20:
+                _this3.prizeIndex = i;return _context3.abrupt("break", 20);case 17:i++;_context3.next = 12;break;case 20:
 
 
 
-                console.log('本次抽中奖品 =>', _this2.prizeList[_this2.prizeIndex].prizeName);
+                console.log('本次抽中奖品 =>', _this3.prizeList[_this3.prizeIndex].prizeName);
                 // 如果奖品设有库存
-                if (_this2.onStock) {
-                  console.log('本次奖品库存 =>', _this2.prizeList[_this2.prizeIndex].prizeStock);
-                }case 22:case "end":return _context2.stop();}}}, _callee2);}))();
+                if (_this3.onStock) {
+                  console.log('本次奖品库存 =>', _this3.prizeList[_this3.prizeIndex].prizeStock);
+                }case 22:case "end":return _context3.stop();}}}, _callee3);}))();
     },
     // 本次抽奖结束
-    handleDrawEnd: function handleDrawEnd() {var _this3 = this;
+    handleDrawEnd: function handleDrawEnd() {var _this4 = this;
       console.log('旋转结束，执行拿到结果后到逻辑');
 
       // 旋转结束后，开始处理拿到结果后的逻辑
@@ -544,7 +544,7 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
         content: tipContent,
         showCancel: false,
         complete: function complete() {
-          _this3.prizeing = false;
+          _this4.prizeing = false;
         } });
 
       this.$refs.inputDialog.open();
@@ -572,7 +572,11 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
       }, 50);
     } },
 
-  onLoad: function onLoad() {
+  onLoad: function onLoad(option) {
+    this.luck_id = option.luck_id;
+    this.requestParams = {
+      id: this.luck_id };
+
     this.prizeList = [];
     this.getPrizeList();
   },
@@ -580,8 +584,6 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
     uni.hideLoading();
   },
   created: function created() {
-    this.requestParams = {
-      id: 1 };
 
   },
   onReady: function onReady() {
@@ -590,5 +592,6 @@ var _almostUtils = __webpack_require__(/*! @/uni_modules/almost-lottery/utils/al
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
-],[[16,"common/runtime","common/vendor"]]]);
+
+},[[23,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/index/luck.js.map

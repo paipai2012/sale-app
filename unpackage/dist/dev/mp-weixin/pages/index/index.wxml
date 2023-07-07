@@ -1,1 +1,1 @@
-<view class="content"><view class="image-list"><block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="image-item"><image mode="aspectFill" whit="{{true}}" src="{{item.src}}" data-event-opts="{{[['error',[['imageError',['$event']]]]]}}" binderror="__e"></image></view></block></view></view>
+<view><view><navigator url="/pages/index/luck?luck_id=1" hover-class="navigator-hover"><button type="default">去抽奖</button></navigator></view></view>

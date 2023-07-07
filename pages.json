@@ -7,17 +7,12 @@
 		"backgroundColor": "#ffffff",
 		"list": [
 			{
-				"pagePath": "pages/index/luck",
-				"#iconPath": "static/image/icon_API.png",
-				"#selectedIconPath": "static/image/icon_API_HL.png",
-				"text": "抽奖"
-			},
-			{
 				"pagePath": "pages/index/index",
 				"#iconPath": "static/image/icon_component.png",
 				"#selectedIconPath": "static/image/icon_component_HL.png",
-				"text": "热门"
-			}, {
+				"text": "抽奖"
+			},
+			{
 				"pagePath": "pages/index/category",
 				"#iconPath": "static/image/icon_API.png",
 				"#selectedIconPath": "static/image/icon_API_HL.png",
@@ -27,13 +22,13 @@
 	},
 	"pages": [
 		{
-			"path": "pages/index/luck",
+			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
 		},
 		{
-			"path": "pages/index/index",
+			"path": "pages/index/luck",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}

@@ -17,7 +17,7 @@
 		/>
     <uni-popup ref="inputDialog" type="dialog">
       <uni-popup-dialog ref="phoneInput" type="number" mode="input" title="输入手机号领取奖品" value=""
-        placeholder="请输入手机号" @confirm="dialogPhoneConfirm"></uni-popup-dialog>
+        placeholder="请输入手机号" @confirm="dialogPhoneConfirm" :before-close="true"></uni-popup-dialog>
     </uni-popup>
 	</view>
 </template>
@@ -32,6 +32,7 @@
     },
     data () {
       return {
+        luck_id: 0,
         // 开启调试模式
         isDev: true,
         
@@ -86,27 +87,36 @@
     },
     methods: {
       // 提交中奖手机号
-      dialogPhoneConfirm(value) {
-        this.$request.send(
+      async dialogPhoneConfirm(value) {
+        if(!this.$validator.PhoneNum(value)){
+          uni.showToast({
+            title: "手机号格式不正确",
+          	mask: true,
+          	icon: 'none'
+          });
+          return
+        }
+        let res = await this.$request.send(
           {
-            url:'luck/addDraw',
+            url:'luck/updateUserPhone',
             method:'POST',
-            data:{luck_id:1}
-          }
+            data:{phone:value}
+          } 
         );
-        // let data = res.data
-        // if(!data.success) {
-        //   uni.hideLoading()
-				// 	uni.showModal({
-				// 		title: data.message,
-        //     showCancel: false,
-        //     // mask: true,
-        //     // icon: 'none'
-				// 	})
-        //   this.prizeing = false;
-        //   return
-        // }
-        // console.log(value);
+        let data = res.data
+        if(!data.success) {
+					uni.showModal({
+						title: data.message,
+            showCancel: false,
+					})
+          return
+        }
+        this.$refs.inputDialog.close();
+        uni.showModal({
+          title: "谢谢，你的奖品会快马加鞭",
+          showCancel: false,
+        })
+        console.log(value);
       },
       // 重新生成
       handleInitCanvas () {
@@ -312,7 +322,7 @@
           {
             url:'luck/addDraw',
             method:'POST',
-            data:{luck_id:1}
+            data:{luck_id:this.luck_id}
           }
         );
         let data = res.data
@@ -396,7 +406,11 @@
         }, 50)
       },
     },
-    onLoad () {
+    onLoad (option) {
+      this.luck_id = option.luck_id
+      this.requestParams = {
+        id: this.luck_id,
+      };
       this.prizeList = []
       this.getPrizeList()
     },
@@ -404,9 +418,7 @@
       uni.hideLoading()
     },
     created() {
-      this.requestParams = {
-        id: 1,
-      };
+
     },
     onReady() {
       // this.loadData();

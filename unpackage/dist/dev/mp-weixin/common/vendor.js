@@ -3571,6 +3571,37 @@ if (hadRuntime) {
 
 /***/ }),
 
+/***/ 16:
+/*!***************************************************************************!*\
+  !*** /Users/pengdongjiang/Documents/code/sale/uniapp/common/validator.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.validator = void 0;var validator = {
+  PhoneNum: function PhoneNum(value) {
+    return /^1[23456789]\d{9}$/.test(value);
+  },
+  Email: function Email(value) {
+    return /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(value);
+  },
+  IDCard: function IDCard(value) {
+    var reg = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+    return reg.test(value);
+  },
+  NewDate: function NewDate(value) {
+    return !/Invalid|NaN/.test(new Date(value).toString());
+  },
+  Money: function Money(value) {
+    return /^[1-9]\d*(,\d{3})*(\.\d{1,2})?$|^0\.\d{1,2}$/.test(value);
+  },
+  NumberIsTen: function NumberIsTen(value) {
+    return /^(?:-?\d+|-?\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test(value);
+  } };exports.validator = validator;
+
+/***/ }),
+
 /***/ 2:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -3602,7 +3633,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 22:
+/***/ 29:
 /*!********************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/uni_modules/almost-lottery/utils/almost-utils.js ***!
   \********************************************************************************************************/
@@ -10441,7 +10472,7 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 58:
+/***/ 57:
 /*!***********************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/uni_modules/uni-popup/components/uni-popup/popup.js ***!
   \***********************************************************************************************************/
@@ -10476,7 +10507,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 59:
+/***/ 58:
 /*!****************************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/uni_modules/uni-popup/components/uni-popup/i18n/index.js ***!
   \****************************************************************************************************************/
@@ -10484,9 +10515,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 60));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 61));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 62));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 59));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 60));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 61));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   en: _en.default,
   'zh-Hans': _zhHans.default,
@@ -10494,7 +10525,7 @@ var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 6
 
 /***/ }),
 
-/***/ 60:
+/***/ 59:
 /*!***************************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/uni_modules/uni-popup/components/uni-popup/i18n/en.json ***!
   \***************************************************************************************************************/
@@ -10505,7 +10536,7 @@ module.exports = JSON.parse("{\"uni-popup.cancel\":\"cancel\",\"uni-popup.ok\":\
 
 /***/ }),
 
-/***/ 61:
+/***/ 60:
 /*!********************************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/uni_modules/uni-popup/components/uni-popup/i18n/zh-Hans.json ***!
   \********************************************************************************************************************/
@@ -10516,7 +10547,7 @@ module.exports = JSON.parse("{\"uni-popup.cancel\":\"取消\",\"uni-popup.ok\":\
 
 /***/ }),
 
-/***/ 62:
+/***/ 61:
 /*!********************************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/uni_modules/uni-popup/components/uni-popup/i18n/zh-Hant.json ***!
   \********************************************************************************************************************/
@@ -10527,7 +10558,7 @@ module.exports = JSON.parse("{\"uni-popup.cancel\":\"取消\",\"uni-popup.ok\":\
 
 /***/ }),
 
-/***/ 70:
+/***/ 69:
 /*!*******************************************************************************************************************************!*\
   !*** /Users/pengdongjiang/Documents/code/sale/uniapp/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
   \*******************************************************************************************************************************/

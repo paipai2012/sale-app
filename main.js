@@ -12,6 +12,8 @@ Vue.prototype.$appSecret = appSecret;
 Vue.prototype.$appToken = appToken;
 import {request} from './common/request.js'
 Vue.prototype.$request = request
+import {validator} from './common/validator.js'
+Vue.prototype.$validator = validator
 App.mpType = 'app'
 const app = new Vue({
     ...App
